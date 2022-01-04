@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.header{
+    max-width: 100%;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 2rem;
+}
