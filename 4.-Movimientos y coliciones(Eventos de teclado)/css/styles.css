@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(8, 134, 56);
+}
+
+
+/* Ball---Eventos del teclado */
+.stage{
+    display: flex;
+    min-width: 50vw;
+    min-height: 50vh;
+    background-color: #333;
+}
+.ball{
+   margin: auto;
+   width: 4rem;
+   height: 4rem;
+   border-radius: 50%;
+   background-color: rgb(255, 217, 0); 
+}
