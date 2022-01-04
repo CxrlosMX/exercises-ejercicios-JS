@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(134, 23, 8);
+}
+
