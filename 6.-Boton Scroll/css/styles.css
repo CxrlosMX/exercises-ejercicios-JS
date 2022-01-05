@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  max-width: 100%;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgb(93, 117, 250);
+}
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: calc(4.25rem+1vw);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgb(253, 208, 5);
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.scroll-top-btn:hover {
+  background-color: black;
+  color: rgb(253, 208, 5);
+}
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
