@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  max-width: 100%;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgb(253, 208, 5);
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+  background-color: #333;
+  color: rgb(253, 208, 5);
+  transition: all 0.3s ease-out;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+.card figcaption {
+  padding: 1rem;
+}
+.filter {
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+}
