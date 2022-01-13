@@ -11,6 +11,61 @@ header {
 }
 
 .container {
+  margin-top: 2rem;
   width: 100%;
   text-align: center;
+}
+/* Responsive Slider */
+.slider{
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.slider-slides{
+  position: relative;
+  height: 400px;
+}
+.slider-slide{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease;
+}
+.slider-slide img{
+  height: inherit;
+  width: inherit;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+.active{
+  opacity: 1;
+  visibility: visible;
+}
+.slider a{
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: thin solid #000;
+  text-decoration: none;
+  background-color: #fff;
+  color: #333;
+  transition:  all 0.3s ease;
+}
+.slider a:hover{
+  color: #4d4d4d;
+}
+.slider-btns{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 3rem;
+  font-weight: bold;
 }
