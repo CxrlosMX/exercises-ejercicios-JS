@@ -32,5 +32,9 @@ export default function slider() {
             $slides[i].classList.add("active")
 
         }
+
+
+
+
     });
 }
