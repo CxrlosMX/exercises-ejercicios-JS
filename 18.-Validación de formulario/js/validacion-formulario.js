@@ -38,8 +38,34 @@ export default function contactFormValidations() {
                 return !regex.exec($input.value) ? d.getElementById($input.name).classList.add("is-active") : d.getElementById($input.name).classList.remove("is-active");
             }
             if (!pattern) {
-                return $input.value==="" ? d.getElementById($input.name).classList.add("is-active") : d.getElementById($input.name).classList.remove("is-active");
+                return $input.value === "" ? d.getElementById($input.name).classList.add("is-active") : d.getElementById($input.name).classList.remove("is-active");
             }
         }
+    });
+
+    // Simulación de envio de correo 
+    d.addEventListener("submit", (e) => {
+        e.preventDefault();
+        alert("Enviando Formulario");
+
+        // Almacenamos el loader y la referencia de envio
+        const $loader = d.querySelector(".contact-form-loader"),
+            $response = d.querySelector(".contact-form-response");
+
+        $loader.classList.remove("none");
+
+        // Simulamos el envio de nuestro formulario, con un settimeout
+        setTimeout((e) => {
+            $loader.classList.add("none");
+            $response.classList.remove("none");
+            // Y reseteamos el formulario
+            $form.reset();
+            // Agregamos otro settimeout para que se quite el mensaje despues de cierto tiempo
+            setTimeout(() => {
+                $response.classList.add("none");
+            }, 2000);
+        }, 2000);
+
+
     });
 }
