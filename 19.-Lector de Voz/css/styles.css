@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+header {
+  max-width: 100%;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgb(253, 208, 5);
+}
+
+.container {
+  margin-top: 2rem;
+  width: 100%;
+  text-align: center;
+  /* background-color: #333; */
+}
